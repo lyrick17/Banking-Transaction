@@ -1218,7 +1218,7 @@ public class Scenes extends StylesAndProperties {
 
     private void depositBtnEvent(String userInputAmount) {
         try {
-            if (Double.parseDouble(userInputAmount) < 3000) {
+            if (Double.parseDouble(userInputAmount) < 1) {
                 errorText.setText("Initial Deposit minimum is ₱1.00");
             } else {
                 double depositAmount = Double.parseDouble(userInputAmount);
